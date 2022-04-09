@@ -22,6 +22,8 @@ public class hesapMakinesi {
 
         if (secim == 1) {
             System.out.println("sonuc = " + (sayi1 + sayi2));
+        } else if (secim == 4) {
+            System.out.println("sonuc = " + (float) sayi1 / sayi2);
         }
     }
 }
