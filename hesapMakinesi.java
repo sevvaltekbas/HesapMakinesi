@@ -23,7 +23,13 @@ public class hesapMakinesi {
         if (secim == 1) {
             System.out.println("sonuc = " + (sayi1 + sayi2));
         } else if (secim == 4) {
-            System.out.println("sonuc = " + (float) sayi1 / sayi2);
+            try {
+                System.out.println("sonuc = " + (float) (sayi1 / sayi2));
+            } catch (Exception e) {
+                System.out.println("Hata bulundu!!");
+                System.out.println(e.toString());
+                System.out.println("Sıfıra bölünme hatası var");
+            }
         }
     }
 }
